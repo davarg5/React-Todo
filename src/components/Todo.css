@@ -1,9 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,600&display=swap');
+
+.App {
+    font-family: 'Titillium Web', sans-serif;
+}
+
 
 .item {
     background-color: #e64944;
     color: white;
     width: 20%;
     text-align: center;
+    border-radius: 10px;
+    margin-bottom: 3%;
+    padding: 0.25%;
 }
 
 .item.completed {
