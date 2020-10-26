@@ -54,7 +54,7 @@ class App extends React.Component {
   addItem = (name) => {
     this.setState({
       list: [...this.state.list, {
-        task: name,
+        task : name,
         id: this.state.list.length,
         completed: false
       }]
