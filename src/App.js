@@ -51,6 +51,16 @@ class App extends React.Component {
     });
   }
 
+  addItem = (name) => {
+    this.setState({
+      list: [...this.state.list, {
+        task: name,
+        id: this.state.list.length,
+        completed: false
+      }]
+    })
+  }
+
 
 
   render() {
@@ -59,7 +69,7 @@ class App extends React.Component {
         <h2>Welcome to your Todo App!</h2>
 
         <TodoList list={this.state.list} handleToggleItem={this.handleToggleItem} clearItems={this.clearItems}/>
-        <TodoForm />
+        <TodoForm addItem={this.addItem}/>
       </div>
 
     );
